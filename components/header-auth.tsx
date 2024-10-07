@@ -56,7 +56,22 @@ export default async function AuthButton() {
       </form>
     </div>
   ) : (
-    <div className="flex gap-2">
+    <div className="flex gap-2 divide-x">
+      <Button asChild size="sm" variant={"ghost"} className="slate-200">
+        <Link href="/podcast">Podcast</Link>
+      </Button>
+      <Button asChild size="sm" variant={"ghost"} className="slate-200">
+        <Link href="/one-v-one">1 v 1 </Link>
+      </Button>
+      <Button asChild size="sm" variant={"ghost"} className="slate-200">
+        <Link href="/three-v-three">3 v 3</Link>
+      </Button>
+      <Button asChild size="sm" variant={"ghost"} className="slate-200">
+        <Link href="/football-league">Football League </Link>
+      </Button>
+      <Button asChild size="sm" variant={"ghost"} className="slate-200">
+        <Link href="/talent-management">Talent Management</Link>
+      </Button>
       <Button asChild size="sm" variant={"outline"}>
         <Link href="/sign-in">Sign in</Link>
       </Button>
