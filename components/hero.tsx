@@ -74,64 +74,70 @@ export default function Header() {
     </div>
       <Separator className="my-0   space-y-10 " />
      
-      <div className="grid grid-cols-3 gap-4  border-t items-center ">
-      <div className="col-span-3 md:col-span-1 max-w-sm rounded overflow-hidden shadow-lg">
-  <Image        src={banner}
-                        width={1300}
-                        height={100}
 
-                        alt="Picture of the author"/>
+      <div className="w-full rounded overflow-hidden space-y-20 ">
+      <h1 > <b> </b> </h1> 
+</div>
+      <div className="grid grid-cols-3 gap-[20px]   justify-items-center ">
+      
+
+ 
+
+
+      <div className="col-span-3 md:col-span-1  rounded overflow-hidden shadow-lg">
+       
+      <iframe className="w-full h-96" src="https://www.youtube.com/embed/3ZotJ7yukL8?si=NmwYR8zXwBUvaVH3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   <div className="px-6 py-4">
-    <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
-    <p className="text-gray-700 text-base">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+    <div className="font-bold text-xl mb-2">1 v 1 Competition</div>
+    <p className="text-gray-700 text-base  dark:text-white ">
+    In a thrilling 1v1 competition, two skilled opponents face off in a battle of strategy and agility...    </p>
+  </div>
+  <a href="/one-v-one">
+  <div className=" flex justify-end px-5 pt-4 pb-4 ">
+  <button className="bg-transparent hover:bg-blue-500  dark:text-white  text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+ Learn More 
+</button>
+
+  </div>
+  </a>
+</div>
+
+<div className="col-span-3 md:col-span-1 rounded overflow-hidden shadow-lg items-center">
+  <iframe className="w-full h-96"  src="https://www.youtube.com/embed/ds1sAptVxIQ?si=7f8NQ9ABl_zW4unb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <div className="px-6 py-4">
+    <div className="font-bold text-xl mb-2">Football Podcast</div>
+    <p className="text-gray-700  dark:text-white text-base">
+    In this engaging soccer podcast, hosts discuss the latest match highlights, player performances...   </p>
+  </div>
+  <a href="/podcast">
+  <div className=" flex justify-end px-5 pt-4 pb-4 ">
+  <button className="bg-transparent  dark:text-white hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+ Learn More 
+</button>
+  </div>
+  </a>
+</div>
+<div className="col-span-3 md:col-span-1 rounded overflow-hidden shadow-lg items-center">
+<iframe className="w-full h-96" src="https://www.youtube.com/embed/3ZotJ7yukL8?si=NmwYR8zXwBUvaVH3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <div className="px-6 py-4">
+    <div className="font-bold text-xl mb-2">3 v 3 BBall Competition</div>
+    <p className="text-gray-700  dark:text-white  text-base">
+    Teams displayed exceptional skill and teamwork in their quest for victory. Fast breaks...
     </p>
   </div>
-  <div className="px-6 pt-4 pb-2">
-    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+  <a href="/three-v-three">
+  <div className=" flex justify-end px-5 pt-4 pb-4  " >
+  <button className="bg-transparent  dark:text-white   hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+ Learn More 
+</button>
   </div>
-</div>
-
-<div className="col-span-3 md:col-span-1 max-w-sm rounded overflow-hidden shadow-lg">
-  <Image        src={banner}
-                        width={1300}
-                        height={100}
-
-                        alt="Picture of the author"/>
-  <div className="px-6 py-4">
-    <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
-    <p className="text-gray-700 text-base">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-    </p>
-  </div>
-  <div className="px-6 pt-4 pb-2">
-    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-  </div>
-</div>
-<div className="col-span-3 md:col-span-1 max-w-sm rounded overflow-hidden shadow-lg">
-  <Image        src={banner}
-                        width={1300}
-                        height={100}
-
-                        alt="Picture of the author"/>
-  <div className="px-6 py-4">
-    <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
-    <p className="text-gray-700 text-base">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-    </p>
-  </div>
-  <div className="px-6 pt-4 pb-2">
-    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-  </div>
+  </a>
 </div>
 
 </div>
+
+
 </>
   );
 }

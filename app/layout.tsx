@@ -18,8 +18,8 @@ const defaultUrl = process.env.VERCEL_URL
 
 export const metadata = {
   metadataBase: new URL(defaultUrl),
-  title: "Next.js and Supabase Starter Kit",
-  description: "The fastest way to build apps with Next.js and Supabase",
+  title: "Game Breakers Sports Ng Ltd",
+  description: "Bring Your A Game",
 };
 
 export default function RootLayout({
@@ -39,21 +39,25 @@ export default function RootLayout({
           <main className="min-h-screen flex flex-col items-center">
             <div className="flex-1 w-full flex flex-col  items-center">
               <nav className="w-full flex justify-center border-b border-b-foreground/10 h-16">
-                <div className="w-full max-w-5xl flex justify-between items-center p-3 px-5 text-sm">
+                <div className="w-full max-w-1xl flex justify-between pl-08
+                 pr-10 items-center p-3 px-5 text-sm">
                   <div className="flex gap-5 items-center font-semibold">
+                    <a href="/">
                     <div className="mt-3">
                       <Image
+                      
                         src={logo}
                         width={100}
                         height={100}
                         alt="Picture of the author"
                       />
                     </div>
+                    </a>
                   </div>
                   {!hasEnvVars ? <EnvVarWarning /> : <HeaderAuth />}
                 </div>
               </nav>
-              <div className="flex flex-col gap-8 border-b max-w-5xl p-5">
+              <div className="flex flex-col gap-8 border-b max-w-1xl p-5">
                 {children}
               </div>
 
@@ -66,7 +70,7 @@ export default function RootLayout({
                     className="font-bold hover:underline"
                     rel="noreferrer"
                   >
-                    Supabase
+                    benadaji
                   </a>
                 </p>
                 <ThemeSwitcher />
