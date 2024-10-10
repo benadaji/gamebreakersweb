@@ -17,7 +17,7 @@ import {
     DropdownMenuSubContent,
     DropdownMenuSubTrigger,
     DropdownMenuTrigger,
-  } from "@/components/ui/dropdown-menu"
+  } from "../components/ui/dropdown-menu"
 
 export default function HomeHeader() {
   return (
@@ -38,12 +38,12 @@ export default function HomeHeader() {
         <Button asChild size="sm" variant={"ghost"} className="slate-200">
         <Link href="/talent-management">Talent Management</Link>
         </Button>
-        <Button asChild size="sm" variant={"outline"}>
+        {/* <Button asChild size="sm" variant={"outline"}>
         <Link href="/sign-in">Sign in</Link>
         </Button>
         <Button asChild size="sm" variant={"default"}>
         <Link href="/sign-up">Sign up</Link>
-        </Button>
+        </Button> */}
     </div>
 
 

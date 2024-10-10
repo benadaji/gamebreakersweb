@@ -1,14 +1,19 @@
-import DeployButton from "@/components/deploy-button";
-import { EnvVarWarning } from "@/components/env-var-warning";
-import HeaderAuth from "@/components/header-auth";
-import { ThemeSwitcher } from "@/components/theme-switcher";
-import { hasEnvVars } from "@/utils/supabase/check-env-vars";
+// import DeployButton from "@/components/deploy-button";
+import DeployButton from "../components/deploy-button";
+// import { EnvVarWarning } from "@/components/env-var-warning";
+import { EnvVarWarning } from "../components/env-var-warning";
+// import HeaderAuth from "@/components/header-auth";
+// import { ThemeSwitcher } from "@/components/theme-switcher";
+import { ThemeSwitcher } from "../components/theme-switcher";
+// import { hasEnvVars } from "@/utils/supabase/check-env-vars";
 import { GeistSans } from "geist/font/sans";
 import { ThemeProvider } from "next-themes";
 import Image from "next/image";
 import logo from "../../gamebreakerz/app/logo.png";
+
 import Link from "next/link";
 import { motion } from "framer-motion";
+import HomeHeader from '../components/header';
 
 import "./globals.css";
 
@@ -51,11 +56,19 @@ export default function RootLayout({
                         height={100}
                         alt="Picture of the author"
                       />
+                     
                     </div>
                     </a>
+                   
+                    
                   </div>
-                  {!hasEnvVars ? <EnvVarWarning /> : <HeaderAuth />}
+                   
+                  <div className="items-end">
+                    <HomeHeader/>
+                    </div>
+                  {/* {!hasEnvVars ? <EnvVarWarning /> : <HeaderAuth />} */}
                 </div>
+            
               </nav>
               <div className="flex flex-col gap-8 border-b max-w-1xl p-5">
                 {children}

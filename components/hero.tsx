@@ -63,11 +63,11 @@ export default function Header() {
        </div>
     <div className=" absolute flex-row md:block   space-x-6 ">
       
-      <SocialIcon url="https://react-social-icons.com" network="youtube"  style={{ height: 40, width: 40,}}/>
-      <SocialIcon url="https://react-social-icons.com" network="instagram" style={{ height: 40, width: 40 }} />
-      <SocialIcon url="https://react-social-icons.com" network="twitter" style={{ height: 40, width: 40 }}/>
-      <SocialIcon url="https://react-social-icons.com" network="facebook" style={{ height: 40, width: 40 }}/>
-      <SocialIcon url="https://react-social-icons.com" network="tiktok" bgColor="purple" style={{ height: 40, width: 40 }}/>
+      <SocialIcon url="https://m.youtube.com/channel/UClamQvL2S7235rinADDlFUQ" network="youtube"  style={{ height: 40, width: 40,}}/>
+      <SocialIcon url="https://www.instagram.com/gamebreakerspod/" network="instagram" style={{ height: 40, width: 40 }} />
+      <SocialIcon url="https://twitter.com/gamebrkpod" network="twitter" style={{ height: 40, width: 40 }}/>
+      <SocialIcon url="" network="facebook" style={{ height: 40, width: 40 }}/>
+      <SocialIcon url="https://www.tiktok.com/@gamebreakerspod?_r=1&_d=dk446mhdg4fgl2&sec_uid=MS4wLjABAAAAgcsPAhH32bEyEo64RZVltB1l0E5CmaWJDOV0Ug6VHzXld8kEoK5rXPurhCZhRJ1M&share_author_id=7300985576763802629&sharer_language=en&source=h5_m&u_code=eb3da88bfc9g3c&timestamp=1728483818&user_id=7300985576763802629&sec_user_id=MS4wLjABAAAAgcsPAhH32bEyEo64RZVltB1l0E5CmaWJDOV0Ug6VHzXld8kEoK5rXPurhCZhRJ1M&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7423654498818606854&share_link_id=3816f43c-9d66-4936-b0ac-7604ba25c4a8&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb0229&social_share_type=5&enable_checksum=1" network="tiktok" bgColor="purple" style={{ height: 40, width: 40 }}/>
     </div> 
     
  
