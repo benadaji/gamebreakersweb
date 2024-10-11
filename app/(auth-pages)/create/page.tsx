@@ -8,11 +8,11 @@ import { createClient } from '../../../utils/supabase/server';
 import supabase from "../../../utils/config";
 
 
-interface Player {
-  id: number;
-  name: string;
-  description: string;
-}
+// interface Players {
+//   id: number;
+//   name: string;
+//   description: string;
+// }
 
 export default async function Create() {
   // const [players, setPlayers] = useState<Player[]>([]);
@@ -36,8 +36,8 @@ export default async function Create() {
   // };
 
   // useEffect(() => {
-  //   getPlayers();
-  //   console.log(players);
+  //   // getPlayers();
+  //   // console.log(players);
   // }, []);
 
   return (
@@ -56,10 +56,9 @@ export default async function Create() {
           </Link>
         </div>
 
-        <pre>{JSON.stringify(players, null, 2)}</pre>
         <ul> 
-          {/* {players.map((player) => (
-            <li key={player.id} className="py-2 flex justify-between w-full">
+           {players.map((player) => (
+             <li key={player.id} className="py-2 flex justify-between w-full">
               <span>
                 <strong>{player.name}</strong> - {player.description}
               </span>
@@ -73,9 +72,40 @@ export default async function Create() {
               </span>
             </li>
           ))}
-          {players.length < 1 && <div className="py-2">No data</div>} */} 
+          {players.length < 1 && <div className="py-2">No data</div>} 
         </ul>
       </div>
+
+      <div className="container mx-auto mt-8 max-w-[560px]">
+        <div className="flex justify-between items-center pb-4 border-b border-dashed border-gray-900 mb-4">
+          <h1 className="text-3xl font-semibold">Tasks</h1>
+          <Link
+            className="bg-green-600 hover:bg-opacity-80 text-white rounded-lg px-4 py-2 duration-200"
+            href="/create"
+          >
+            Create New
+          </Link>
+        </div>
+        <ul>
+          {players.map((players) => (
+            <li key={players.id} className="py-2 flex justify-between w-full">
+              <span>
+                <strong>{players.name}</strong> - {players.description}
+              </span>
+              <span className="flex gap-2">
+                <Link className="text-blue-700 underline hover:no-underline" href={`/${players.id}/edit`}>Edit</Link>
+                <Link className="text-red-500 underline hover:no-underline" href={`/${players.id}/delete`}>Delete</Link>
+              </span>
+            </li>
+          ))}
+          {players?.length < 1 && <div className="py-2">No data</div>}
+        </ul>
+      </div>
+      <Head>
+        <title>Task</title>
+      </Head>
     </>
   );
 }
+
+{/* <pre>{JSON.stringify(players, null, 2)}</pre> */}
